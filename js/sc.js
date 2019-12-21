@@ -1,8 +1,8 @@
 document.getElementById('slideLeft').onclick = sliderLeft;
 document.getElementById('slideRight').onclick = sliderRight;
-document.getElementById('buttonS1').onclick = switch1;
-document.getElementById('buttonS2').onclick = switch2;
-document.getElementById('buttonS3').onclick = switch3;
+// document.getElementById('buttonS1').onclick = switch1;
+// document.getElementById('buttonS2').onclick = switch2;
+// document.getElementById('buttonS3').onclick = switch3;
 let left = 0;
 
 function sliderLeft() {
@@ -23,18 +23,18 @@ function sliderRight() {
   polosa.style.left = left + 'px';
 }
 
-function switch1() {
-  let slide = document.getElementById('polosa2-1');
-  left = 0;
-  slide.style.left = left + 'px';
-}
-function switch1() {
-  let slide = document.getElementById('polosa2-1');
-  left = -606;
-  slide.style.left = left + 'px';
-}
-function switch1() {
-  let slide = document.getElementById('polosa2-1');
-  left = -1212;
-  slide.style.left = left + 'px';
-}
+// function switch1() {
+//   let slide = document.getElementById('polosa2-1');
+//   left = 0;
+//   slide.style.left = left + 'px';
+// }
+// function switch1() {
+//   let slide = document.getElementById('polosa2-1');
+//   left = -606;
+//   slide.style.left = left + 'px';
+// }
+// function switch1() {
+//   let slide = document.getElementById('polosa2-1');
+//   left = -1212;
+//   slide.style.left = left + 'px';
+// }

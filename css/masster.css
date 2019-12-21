@@ -313,10 +313,9 @@ h5 {
 /* <------    SLIDER   ------> */
 .hotxfixslider {
   display: flex;
-  flex-direction: row-reverse;
   flex-wrap: nowrap;
+  flex-direction: row-reverse;
 }
-
 #polosa2-1 {
   display: flex;
   flex-flow: row nowrap;
@@ -400,6 +399,7 @@ h5 {
   border-radius: 30px;
   overflow: hidden;
   margin-left: 50px;
+  margin-top: 42px;
 }
 #slider1-2 {
   width: 374px;
@@ -417,8 +417,37 @@ h5 {
   position: relative;
   z-index: 1;
   overflow: hidden;
-  padding-top: 25px;
+  border-radius: 30px;
+  padding-top: 45px;
+  margin-right: 54px;
+  margin-left: -28px;
 }
+.buttonsSlider2 {
+  text-align: center;
+  margin-top: 48px;
+}
+.buttonsSlider2 button {
+  height: 43px;
+  width: 43px;
+  border-radius: 50%;
+  background: #6d2c8b;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 21  px;
+  border: none;
+  margin-right: 24px;
+}
+
+.buttonsSlider2 button:hover {
+  background: #d5a8ea;
+  color: #500a70;
+}
+.buttonsSlider2 button:active { /* TODO: Как сделать */
+  background: #d5a8ea;
+  color: #500a70;
+}
+
 .foto {
   width: 100%;
   height: 870px;

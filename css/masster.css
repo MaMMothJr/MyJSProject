@@ -5,29 +5,32 @@
 .main {
   width: 1170px;
   margin: 0 auto;
-
+  position: relative;
 }
+.ultimate {
+  position: absolute;
+  z-index: 9999;
+  right: 0;
+  top: 2695px;
+}
+
 body {
   margin: 0;
   padding: 0;
 }
-
 .headCont {
 display: flex;
 align-items: center;
 }
-
 header {
   display: flex;
   height: 100px;
   width: 100%;
   background: #fbf7ec;
 }
-
 .logo {
   margin-left: 50px;
   margin-right: 340px;
-
 }
 .tel {
   margin-top: 37px;
@@ -35,7 +38,6 @@ header {
   margin-right: 10px;
 
 }
-
 button {
   outline: none;
 }
@@ -54,12 +56,10 @@ button {
   font-family: 'Roboto';
   font-weight: bold;
 }
-
 .buttons:hover {
   border: 2px double white;
    box-shadow: 16px 13px 18px 0px #000000;
 }
-
 .telText {
   float: left;
   font-size: 23px;
@@ -76,27 +76,23 @@ button {
   width: 100%;
   background: URL(../img/Back1.png);
 }
-
 nav {
   height: 74px;
   width: 1170px;
   background: URL(../img/Back2.png);
   padding: 0;
   margin: 0;
-
 }
 .menu {
   padding: 0;
   margin: 0;
   display: block;
 }
-
 .menu li {
   display: inline-block;
   margin-left: 55px;
   margin-top: 25px;
 }
-
 .menu a {
   color: #f4cbec;
   text-decoration: none;
@@ -105,7 +101,6 @@ nav {
   font-weight: 300;
   position: relative;
 }
-
 .menu a::before {
   content: '';
   bottom: -18px;
@@ -124,13 +119,11 @@ nav {
 .menu a:hover {
   color: #ffffff;
 }
-
 .firstH1 {
   display: flex;
   align-items: flex-start;
   margin-left: 52px;
 }
-
 .firstH1Part1 {
   display: flex;
   color: #ffffff;
@@ -140,7 +133,6 @@ nav {
   margin-top: 130px;
   margin-bottom: 0;
 }
-
 .firstH1Part2 {
   display: flex;
   color: #ffffff;
@@ -151,7 +143,6 @@ nav {
   margin: 0;
   margin-left: 7px;
 }
-
 .secondH1 {
   color: #ffffff;
   font-family: 'Roboto';
@@ -160,7 +151,6 @@ nav {
   margin-left: 150px;
   margin-top: 19px;
 }
-
 .button2 {
   background: #4d1251;
   height: 60px;
@@ -180,7 +170,6 @@ height: 860px;
 width: 100%;
 background: #fbf7ec;
 }
-
 h2 {
   font-family: 'Lobster';
   font-size: 60px;
@@ -190,7 +179,6 @@ h2 {
   padding-top: 42px;
   padding-left: 295px;
 }
-
 .edges {
   display: flex;
   align-items: center;
@@ -198,14 +186,12 @@ h2 {
   justify-content:space-around;
   margin: 0px auto;
 }
-
 .edge {
   width: 300px;
   height: 300px;
   text-align: center;
   padding-top: 36px;
 }
-
 .icon {
   height: 115px;
   width: 115px;
@@ -213,20 +199,16 @@ h2 {
   margin-left: 92px;
   margin-right: 92px;
 }
-
 .edge img {
   padding-top: 25px;
 }
-
 #hotfix {
   padding-top: 40px;
 }
-
 h3, h4, h5, p, h6 {
   padding: 0;
   margin: 0;
 }
-
 .titleH3 {
   color: #49026a;
   font-family: 'Roboto';
@@ -234,7 +216,6 @@ h3, h4, h5, p, h6 {
   font-weight: 700;
   margin-top: 30px;
 }
-
 .explanations {
   color: #0c0b0c;
   font-family: 'Roboto';
@@ -242,7 +223,6 @@ h3, h4, h5, p, h6 {
   font-weight: 400;
   margin-top: 22px;
 }
-
 .icon_text {
   background: #f6c68e;
 }
@@ -261,7 +241,6 @@ h3, h4, h5, p, h6 {
 .icon_price {
   background: #e4b2f6;
 }
-
 .danceSection {
   margin:0;
   padding: 0;
@@ -272,7 +251,6 @@ h3, h4, h5, p, h6 {
   background-position: center;
 
 }
-
 h4 {
   font-family: 'Lobster';
   font-size: 60px;
@@ -281,7 +259,6 @@ h4 {
   padding-top: 15px;
   padding-left: 240px;
 }
-
 .euroDance {
   display: flex;
   align-items: flex-start;
@@ -291,7 +268,6 @@ h4 {
   /* justify-content:space-around; */
   /* margin: 0px auto; */
 }
-
 h5 {
   color: #ffffff;
   font-family: 'Roboto';
@@ -299,19 +275,16 @@ h5 {
   font-weight: 700;
 
 }
-
 .hotfixH {
   margin-top: 68px;
   margin-left: 62px;
 }
-
 .euroDanceUl {
   display: flex;
   align-items: flex-start;
   flex-wrap: nowrap;
   justify-content:space-around;
 }
-
 .euroDanceUl li {
   list-style-type: none;
   color: #ffffff;
@@ -326,27 +299,136 @@ h5 {
   flex-wrap: nowrap;
   justify-content:space-around;
 }
-
 .teacher {
   width: 100%;
   height: 1216px;
   background: #fbf7ec;
   box-shadow: 0px 5px 5px -1px #000000 inset; /* TODO: уточнить */
-
+  position: relative;
+}
+.teacher h6 {
+  padding-top: 22px;
+  margin-left: 127px;
+}
+/* <------    SLIDER   ------> */
+.hotxfixslider {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
 }
 
+#polosa2-1 {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 1818px;
+  height: 460px;
+}
+#polosa2-2 {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 1122px;
+  height: 501px;
+}
+#polosa2-3 {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 1851px;
+  height: 401px;
+}
+.slide {
+  position: relative;
+}
+.back {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.backslide {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.backslide1 {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.text1 {
+  position: absolute;
+  top: 150px;
+  left: 29px;
+  text-align: center;
+}
+.text2 {
+  position: absolute;
+  bottom: 17px;
+  left: auto;
+  text-align: center;
+}
+.text3 {
+  position: absolute;
+  top: 150px;
+  right: 29px;
+  text-align: center;
+}
+.text1, .text3 p {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-size: 18px;
+  color: #310446;
+  margin-top: 28px;
+}
+.text2 p {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-size: 18px;
+  color: #ffffff;
+  margin-top: 22px;
+  margin-left: 20px;
+}
+.teacherName {
+  margin-top: 0px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 23px;
+}
+#slider1-1 {
+  width: 606px;
+  height: 460px;
+  position: relative;
+  z-index: 1;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-left: 50px;
+}
+#slider1-2 {
+  width: 374px;
+  height: 501px;
+  position: relative;
+  z-index: 1;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-left: 150px;
+  margin-top: -25px;
+}
+#slider1-3 {
+  width: 617px;
+  height: 401px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding-top: 25px;
+}
 .foto {
   width: 100%;
   height: 870px;
   background: #6d2c8b;
 }
-
 .respone {
   width: 100%;
   height: 483px;
   background: #ffffff;
 }
-
 h6 {
   color: #6d2c8b;
   font-family: 'Lobster';
@@ -356,7 +438,6 @@ h6 {
   margin-left: 470px;
   padding-top: 20px;
 }
-
 .omg3slide {
   display: flex;
   flex-flow: row nowrap;
@@ -368,7 +449,6 @@ h6 {
   height: 290px;
   width: 950px;
 }
-
 .name  {
   color: #6d2c8b;
   font-family: 'Roboto';
@@ -376,7 +456,6 @@ h6 {
   font-weight: 500;
   margin-left: 61px;
 }
-
 .textLie {
   color: #2e083e;
   font-family: 'Roboto';
@@ -385,11 +464,9 @@ h6 {
   margin-left: 61px;
   margin-top: 43px;
 }
-
 .omg3slide button {
   margin-top: 124px;
 }
-
 #slideLeft {
   background: URL(../img/left.png) 50% 50% no-repeat;
   background-size: contain;
@@ -404,7 +481,6 @@ h6 {
   height: 50px;
   border: none;
 }
-
 #slider3 {
   display: flex;
   flex-flow: row nowrap;
@@ -421,13 +497,11 @@ h6 {
   left: 0;
   transition: all ease 1s;
 }
-
 .call {
   width: 100%;
   height: 550px;
   background: #fcf2d6;
 }
-
 .callOnMe {
   display: flex;
   align-items: flex-start;
@@ -435,7 +509,6 @@ h6 {
   padding-top: 57px;
   padding-left: 120px;
 }
-
 .attention {
   display: flex;
   align-items: flex-start;
@@ -462,14 +535,12 @@ h6 {
   color: #44076f;
   margin-left: 33px;
 }
-
 .stats {
   font-family: 'Roboto';
   font-size: 63.5px;
   font-weight: 500;
   color: #44076f;
 }
-
 .lieP1, .lie2 {
   font-family: 'Roboto';
   font-size: 25.5px;
@@ -501,7 +572,6 @@ h6 {
   border: 1px solid #5c5b58;
   border-radius: 10px;
 }
-
 .order p {
   font-family: 'Roboto';
   font-size: 25.5px;
@@ -511,7 +581,6 @@ h6 {
   margin-top: 42px;
 
 }
-
 .order input {
   border: 1px solid #d5d4d4;
   border-radius: 20px;
@@ -546,28 +615,23 @@ input::-webkit-input-placeholder {
   margin-top: 20px;
 
 }
-
 .path {
   position: relative;
   width: 100%;
   height: 904px;
   background: #fbf7ec;
 }
-
 .path h6 {
   margin-left: 284px;
   padding-top: 26px;
 }
-
 map {
 position:absolute;
 width: 100%;
 bottom:0;
 left:0;
 }
-
 footer {
-
   position: absolute;
   left: 0;
   bottom: 0;
@@ -585,7 +649,6 @@ footer {
   margin-left: 112px;
   padding-top: 16px;
 }
-
 address {
   color: #fefefe;
   font-family: 'Roboto';
@@ -597,7 +660,7 @@ address {
   margin-top: 25px;
 }
 .SN img {
-  padding-right: : px;
+  padding-right: 7px;
 }
 .callback p {
   color: #feffff;
@@ -605,7 +668,6 @@ address {
   font-size: 25px;
   font-weight: 500;
 }
-
 .button4 {
   background: #ffffff;
   height: 45px;
@@ -619,7 +681,6 @@ address {
   font-weight: bold;
   margin-top: 20px;
 }
-
 .callback {
   margin-left: 90px;
   padding-top: 16px;

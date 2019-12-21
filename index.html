@@ -5,6 +5,47 @@
     <link rel="stylesheet" href="css/masster.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic" rel="stylesheet">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.waterwheelCarousel.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        var carousel = $("#carousel").waterwheelCarousel({
+          flankingItems: 3,
+          movingToCenter: function ($item) {
+            $('#callback-output').prepend('movingToCenter: ' + $item.attr('id') + '<br/>');
+          },
+          movedToCenter: function ($item) {
+            $('#callback-output').prepend('movedToCenter: ' + $item.attr('id') + '<br/>');
+          },
+          movingFromCenter: function ($item) {
+            $('#callback-output').prepend('movingFromCenter: ' + $item.attr('id') + '<br/>');
+          },
+          movedFromCenter: function ($item) {
+            $('#callback-output').prepend('movedFromCenter: ' + $item.attr('id') + '<br/>');
+          },
+          clickedCenter: function ($item) {
+            $('#callback-output').prepend('clickedCenter: ' + $item.attr('id') + '<br/>');
+          }
+        });
+
+        $('#prev').bind('click', function () {
+          carousel.prev();
+          return false
+        });
+
+        $('#next').bind('click', function () {
+          carousel.next();
+          return false;
+        });
+
+        $('#reload').bind('click', function () {
+          newOptions = eval("(" + $('#newoptions').val() + ")");
+          carousel.reload(newOptions);
+          return false;
+        });
+
+      });
+    </script>
     <title>First step</title>
   </head>
   <body>
@@ -247,12 +288,26 @@
       </div>
     </div>
     <div class="buttonsSlider2">
-      <button type="button" id="buttonS1"><a href="#"></a>1</button>
+      <button type="button" id="buttonS1">1</button>
       <button type="button" id="buttonS2">2</button>
       <button type="button" id="buttonS3">3</button>
     </div>
   </section>
   <section class="foto" id="foto">
+    <div id="carousel">
+      <a href="#"><img src="images/1.jpg" id="item-1" /></a>
+      <a href="#"><img src="images/2.jpg" id="item-2" /></a>
+      <a href="#"><img src="images/3.jpg" id="item-3" /></a>
+      <a href="#"><img src="images/4.jpg" id="item-4" /></a>
+      <a href="#"><img src="images/5.jpg" id="item-5" /></a>
+      <a href="#"><img src="images/6.jpg" id="item-6" /></a>
+      <a href="#"><img src="images/7.jpg" id="item-7" /></a>
+      <a href="#"><img src="images/8.jpg" id="item-8" /></a>
+      <a href="#"><img src="images/9.jpg" id="item-9" /></a>
+    </div>
+    <div class="nav">
+     <a href="#" id="prev">Prev</a> | <a href="#" id="next">Next</a>
+    </div>
   </section>
   <section class="respone" id="respone">
       <div class="titleRespone">

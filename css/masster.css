@@ -321,51 +321,66 @@ h5 {
   flex-flow: row nowrap;
   width: 1818px;
   height: 460px;
+  position: relative;
+  left: 0;
+  transition: all ease 1s;
 }
 #polosa2-2 {
   display: flex;
   flex-flow: row nowrap;
   width: 1122px;
   height: 501px;
+  position: relative;
+  left: 0;
+  transition: all ease 1s;
 }
 #polosa2-3 {
   display: flex;
   flex-flow: row nowrap;
   width: 1851px;
   height: 401px;
+  position: relative;
+  left: 0;
+  transition: all ease 1s;
 }
 .slide {
   position: relative;
 }
 .back {
   position: absolute;
+  z-index: 9999;
   left: 0;
   top: 0;
 }
 .backslide {
   position: absolute;
+  z-index: 9999;
   left: 0;
   bottom: 0;
 }
 .backslide1 {
   position: absolute;
+  z-index: 9999;
   right: 0;
-  top: 0;
+  bottom: 0;
 }
 .text1 {
   position: absolute;
+  z-index: 99999;
   top: 150px;
   left: 29px;
   text-align: center;
 }
 .text2 {
   position: absolute;
+  z-index: 99999;
   bottom: 17px;
   left: auto;
   text-align: center;
 }
 .text3 {
   position: absolute;
+  z-index: 99999;
   top: 150px;
   right: 29px;
   text-align: center;

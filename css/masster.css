@@ -731,7 +731,7 @@ address {
 }
 
 
-/*<-----------TEST carusel -------->*/
+/* <-----------TEST carusel -------->
 #carousel {
         width:960px;
         border:1px solid #222;
@@ -742,8 +742,8 @@ address {
         background:#FFF;
       }
       #carousel img {
-        visibility:hidden; /* hide images until carousel can handle them */
-        cursor:pointer; /* otherwise it's not as obvious items can be clicked */
+        visibility:hidden; /* hide images until carousel can handle them
+        cursor:pointer; /* otherwise it's not as obvious items can be clicked
       }
 
       .split-left {
@@ -764,4 +764,4 @@ address {
       }
       .nav {
         width: 80px;
-      }
+      } */
